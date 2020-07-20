@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
-<body>
+<body onload="loadTasks()">
     <header>
       <img src="images/kabi.jpeg">
       <nav>
@@ -79,7 +79,20 @@
                 <p>Gold Medal in the 2017 CCSP</p>
                 </ul>
             </div>
-            
+            <div id="content">
+
+
+                <form action="/data" method="POST">
+                    <p>Enter a comment:</p>
+                    <textarea name="input-title">input a comment :)</textarea>
+                    <br/><br/>
+                    <input type="submit" />
+                </form>
+
+                <ul id="task-list"></ul>
+
+
+            </div>
         </div>
         <div class="gallery">
             <div class="skill"> 
